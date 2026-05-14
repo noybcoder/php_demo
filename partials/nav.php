@@ -10,6 +10,7 @@
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
                 <a href="/" class="<?= setClass('/') ?>">Home</a>
                 <a href="./about.php" aria-current="page" class="<?= setClass('/about.php') ?>">About</a>
+                <a href="./notes.php" class="<?= setClass('/notes.php') ?>">Notes</a>
                 <a href="./contact.php" class="<?= setClass('/contact.php') ?>">Contact</a>
                 </div>
             </div>
