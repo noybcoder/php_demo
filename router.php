@@ -1,17 +1,10 @@
 <?php
 
-$uri = parse_url($_SERVER["REQUEST_URI"])["path"];
+$routes = require "routes.php";
 
-$routes = [
-    "/" => "controllers/index.php",
-    "/about.php" => "controllers/about.php",
-    "/notes.php" => "controllers/notes.php",
-    "/contact.php" => "controllers/contact.php"
-];
-
-function abort($code = 404) {
+function abort($code = Response::NOT_FOUND) {
     http_response_code($code);
-    require "controllers/{$code}.php";
+    require "views/{$code}.php";
     die();
 }
 
@@ -22,3 +15,5 @@ function routeToController($uri, $routes) {
         abort();
     }
 };
+
+$uri = parse_url($_SERVER["REQUEST_URI"])["path"];
