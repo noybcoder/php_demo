@@ -2,8 +2,9 @@
 
 return [
     "/" => "controllers/index.php",
-    "/about.php" => "controllers/about.php",
-    "/notes.php" => "controllers/notes.php",
-    "/note.php" => "controllers/note.php",
-    "/contact.php" => "controllers/contact.php"
+    "/about" => "controllers/about.php",
+    "/notes" => "controllers/notes.php",
+    "/note" => "controllers/note.php",
+    "/note/create" => "controllers/note-create.php",
+    "/contact" => "controllers/contact.php"
 ];

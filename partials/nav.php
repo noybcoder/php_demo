@@ -9,9 +9,9 @@
                 <div class="ml-10 flex items-baseline space-x-4">
                 <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-white/5 hover:text-white" -->
                 <a href="/" class="<?= setClass('/') ?>">Home</a>
-                <a href="./about.php" aria-current="page" class="<?= setClass('/about.php') ?>">About</a>
-                <a href="./notes.php" class="<?= setClass('/notes.php') ?>">Notes</a>
-                <a href="./contact.php" class="<?= setClass('/contact.php') ?>">Contact</a>
+                <a href="/about" aria-current="page" class="<?= setClass('/about') ?>">About</a>
+                <a href="/notes" class="<?= setClass('/notes') ?>">Notes</a>
+                <a href="/contact" class="<?= setClass('/contact') ?>">Contact</a>
                 </div>
             </div>
             </div>
