@@ -1,6 +1,6 @@
-<?php require('partials/head.php') ?>    
-<?php require('partials/nav.php') ?>
-<?php require('partials/banner.php') ?>
+<?php require(__DIR__ . '/../../partials/head.php') ?>    
+<?php require(__DIR__ . '/../../partials/nav.php') ?>
+<?php require(__DIR__ . '/../../partials/banner.php') ?>
 <main>
     <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         <form method="POST">
@@ -10,9 +10,9 @@
                         <label for="about" class="block text-sm/6 font-medium text-gray-900 dark:text-white">Write Your Note</label>
                         <div class="mt-2">
                             <textarea id="about" name="about" rows="3" class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6 dark:bg-white/5 dark:text-white dark:outline-white/10 dark:placeholder:text-gray-500 dark:focus:outline-indigo-500" placeholder="Here's an idea for a note..."></textarea>
-                            <?php if (isset($errors['body'])) : ?>
+                            <?php if (isset($errors)) : ?>
                                 <p class="text-red-500 text-xs mt-2"><?= $errors['body'] ?></p>
-                            <?php endif; ?>
+                            <?php endif ; ?>
                         </div>
                     </div>
                 </div>
@@ -26,4 +26,4 @@
 
     </div>
 </main>
-<?php require('partials/footer.php') ?>
+<?php require(__DIR__ . '/../../partials/footer.php') ?>
