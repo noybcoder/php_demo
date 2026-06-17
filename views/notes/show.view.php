@@ -9,6 +9,10 @@
         <p>
             <?= htmlspecialchars($note["body"]) ?>
         </p>
+        <form class="mt-6" method="POST">
+            <input type="hidden" value="<?= $note['id'] ?>">
+            <button class="text-sm text-red-500">Delete</button>
+        </form>
     </div>
 </main>
 <?php require(__DIR__ . '/../../partials/footer.php') ?>

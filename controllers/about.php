@@ -1,5 +1,5 @@
 <?php
 
-$heading = "About Us";
-
-require base_path("views/about.view.php");
+view('about.view.php', [
+    'heading' => 'About Us'
+]);
